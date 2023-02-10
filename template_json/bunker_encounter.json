@@ -1,0 +1,59 @@
+{
+  "@context": 
+    [
+      "https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld",
+      {"encounter":"http://example.com/encounter"}
+    ],
+
+  "type": "EPCISDocument",
+  "schemaVersion": "2.0",
+  "creationDate":"2023-01-31T11:30:47.0Z",
+  "epcisBody": 
+    {
+      "eventList": 
+      [
+        {   
+          "type": "ObjectEvent",
+          "eventTime": "2016-05-03T08:00:00Z",
+          "eventTimeZoneOffset": "-06:00",
+          "eventID": "urn:uuid:createuuid1",
+          "epcList": [
+            "urn:epc:id:giai:880002697.205686000",
+            "urn:epc:id:giai:880002697.601175000"
+          ],
+          "action": "OBSERVE",
+          "bizStep": "ecounter-ex:bizStep-ecounter",
+
+          "readPoint": {"id": "geo:-33.87754098,18.21401266"},
+          "bizLocation": {"id": "geo:-33.87754098,18.21401266"},
+
+          "encounter:eventid" : "7e5e2aef646fa9c1f912a35b04ac738a",
+          "encounter:eventendTime" : "2016-05-03T11:20:00Z",
+          "encounter:distance-km" : "0.062",
+          "encounter:speed-knots" : "0.964",
+          "encounter:duration-hr" : "3.333333333"
+        },
+        {   
+          "type": "ObjectEvent",
+          "eventTime": "2017-09-15T09:00:00Z",
+          "eventTimeZoneOffset": "-06:00",
+          "eventID": "urn:uuid:createuuid2",
+          "epcList": [
+            "urn:epc:id:giai:880002697.211822000",
+            "urn:epc:id:giai:880002697.271062023"
+          ],
+          "action": "OBSERVE",
+          "bizStep": "ecounter-ex:bizStep-ecounter",
+
+          "readPoint": {"id": "geo:40.77247345,28.61340908"},
+          "bizLocation": {"id": "geo:40.77247345,28.61340908"},
+
+          "encounter:eventid" : "71cb1a1f0e627e693017e327e5be0fdd",
+          "encounter:eventendTime" : "2017-09-15T11:40:00Z",
+          "encounter:distance-km" : "0.313",
+          "encounter:speed-knots" : "0.162",
+          "encounter:duration-hr" : "2.666666667"
+        }   
+      ]
+    }   
+}

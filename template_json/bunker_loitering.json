@@ -1,0 +1,40 @@
+{
+  "@context": 
+    [
+      "https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld",
+      {"loitering":"http://example.com/loitering"}
+    ],
+
+  "type": "EPCISDocument",
+  "schemaVersion": "2.0",
+  "creationDate":"2023-01-31T11:30:47.0Z",
+  "epcisBody": 
+    {
+      "eventList": 
+      [
+        {   
+          "type": "ObjectEvent",
+          "eventTime": "2013-11-10T19:55:40Z",
+          "eventTimeZoneOffset": "-06:00",
+          "eventID": "urn:epc:id:createuuid3",
+          "epcList": [
+            "urn:epc:id:giai:880002697.219017178"
+          ],
+          "action": "OBSERVE",
+          "bizStep": "loitering-ex:bizStep-loitering",
+          
+          // mean lat, lon
+          "readPoint": {"id": "geo:49.77837501,-0.380841659"},
+          "bizLocation": {"id": "geo:49.77837501,-0.380841659"},
+
+          "loitering:start-geo" : "geo:49.77858333,-0.382533333",
+          "loitering:end-geo" : "geo:49.77816667,-0.37915",
+          "loitering:eventendTime" : "2013-11-11T06:59:30Z",
+          "loitering:hours" : "11.06388889",
+          "loitering:distance-total-nm" : "2.037900592",
+          "loitering:avgspeed-knots" : "0.184193877",
+          "loitering:avgdistance-shore-nm" : "21.63162122"
+        }   
+      ]
+    }   
+}

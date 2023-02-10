@@ -1,0 +1,38 @@
+{
+  "@context": 
+    [
+      "https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld",
+      {"encounter":"http://example.com/encounter"}
+    ],
+
+  "type": "EPCISDocument",
+  "schemaVersion": "2.0",
+  "creationDate":"sysdate",
+  "epcisBody": 
+    {
+      "eventList": 
+      [
+      {   
+          "type": "ObjectEvent",
+          "eventTime": "event_start",
+          "eventTimeZoneOffset": "-06:00",
+          "eventID": "urn:uuid:createuuid2",
+          "epcList": [
+            "urn:epc:id:gsin:8801234.bunker_ssvid",
+            "urn:epc:id:gsin:8801234.neighbor_ssvid"
+          ],
+          "action": "OBSERVE",
+          "bizStep": "ecounter-ex:bizStep-ecounter",
+
+          "readPoint": {"id": "geo:mean_latitude,mean_longitude"},
+          "bizLocation": {"id": "geo:mean_latitude,mean_longitude"},
+
+          "encounter:eventid" : "event",
+          "encounter:eventendTime" : "event_end",
+          "encounter:distance-km" : "median_distance_km",
+          "encounter:speed-knots" : "median_speed_knots",
+          "encounter:duration-hr" : "event_duration_hr"
+        }   
+      ]
+    }   
+}

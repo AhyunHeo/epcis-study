@@ -1,0 +1,44 @@
+{
+  "@context": ["https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld",
+      {"example": "http://ns.example.com/epcis/"},
+      {"bunker": "http://schema.org/bunker"}
+    ],
+
+  "type": "EPCISDocument",
+  "schemaVersion": "2.0",
+  "creationDate": "2022-07-10T07:45:23.646Z",
+  "epcisHeader": {
+    "epcisMasterData": {
+      "vocabularyList": [
+        {
+          "type": "urn:epcglobal:epcis:vtype:EPCClass",
+          "vocabularyElementList": [
+            {
+              "id": "urn:epc:id:createuuid01",
+              "attributes": [
+                { "id": "bunker:mmsi", 
+                  "attribute": "urn:epc:id:gsin:8801234.272016700" },
+                { "id": "bunker:imo", 
+                  "attribute": "urn:epc:id:gsin:8801234.8928038" },
+                { "id": "bunker:shipname", "attribute": "RABOCHIY" },
+                { "id": "bunker:callsign", "attribute": "NA" },
+                { "id": "bunker:flag", "attribute": "UKR" },
+                { "id": "bunker:class", "attribute": "NA" },
+                { "id": "bunker:fristTimest", 
+                  "attribute": "2014-06-24T07:08:52Z" },
+                { "id": "bunker:lastTimest", 
+                  "attribute": "2014-06-29T08:05:42Z" }
+
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "epcisBody": {
+    "eventList": []
+  }
+}
+
+

@@ -1,0 +1,73 @@
+{
+  "Supported EPCIS version": {
+    "GS1-EPCIS-Version": "2.0",
+    "GS1-CBV-Version": "2.0",
+    "GS1-Extensions": ["FFT"],
+    "Supported Data Format": "JSON"
+  },
+  "EPCIS Resources Endpoits Implimented": [
+    {
+      "EndPoint": "/epcis/v2",
+      "Method": "GET",
+      "Description": "Returns the list of top level resources available for this EPCIS repository"
+    },
+    {
+      "EndPoint": "/epcis/v2/capture",
+      "Method": "POST",
+      "Description": "EPCIS events are added in bulk using the capture interface "
+    },
+    {
+      "EndPoint": "/epcis/v2/capture",
+      "Method": "GET",
+      "Description": "This endpoint returns all capture jobs that were created and supports pagination."
+    },
+    {
+      "EndPoint": "/epcis/v2/capture/{captureID}",
+      "Method": "GET",
+      "Description": "This endpoint exposes the state of the capture job to the client."
+    },
+    {
+      "EndPoint": "/epcis/v2/events",
+      "Method": "POST",
+      "Description": "Synchronous capture interface for a single EPCIS event"
+    },
+    {
+      "EndPoint": "/epcis/v2/events",
+      "Method": "GET",
+      "Description": "This endpoint exposes the state of the capture job to the client."
+    },
+    {
+      "EndPoint": "/epcis/v2/events/{eventID}",
+      "Method": "GET",
+      "Description": "Returns an individual EPCIS event"
+    }
+  ],
+  "EPCIS Resources Endpoits Under Implementation": [
+    { "EndPoint": "/epcis/v2/eventTypes" },
+    { "EndPoint": "/epcis/v2/eventTypes/{eventType}" },
+    { "EndPoint": "/epcis/v2/eventTypes/{eventType}/events" },
+    { "EndPoint": "/epcis/v2/epcs" },
+    { "EndPoint": "/epcis/v2/epcs/{epc}" },
+    { "EndPoint": "/epcis/v2/epcs/{epc}/events" },
+    { "EndPoint": "/epcis/v2/bizSteps" },
+    { "EndPoint": "/epcis/v2/bizSteps/{bizStep}" },
+    { "EndPoint": "/epcis/v2/bizSteps/{bizStep}/events" },
+    { "EndPoint": "/epcis/v2/bizLocations" },
+    { "EndPoint": "/epcis/v2/bizLocations/{bizLocation}" },
+    { "EndPoint": "/epcis/v2/bizLocations/{bizLocation}/events" },
+    { "EndPoint": "/epcis/v2/readPoints" },
+    { "EndPoint": "/epcis/v2/readPoints/{readPoint}" },
+    { "EndPoint": "/epcis/v2/readPoints/{readPoint}/events" },
+    { "EndPoint": "/epcis/v2/dispositions" },
+    { "EndPoint": "/epcis/v2/dispositions/{disposition}" },
+    { "EndPoint": "/epcis/v2/dispositions/{disposition}/events" },
+    { "EndPoint": "/epcis/v2/queries" },
+    { "EndPoint": "/epcis/v2/queries/{queryName}" },
+    { "EndPoint": "/epcis/v2/queries/{queryName}/subscriptions" },
+    {
+      "EndPoint": "/epcis/v2/queries/{queryName}/subscriptions/{subscriptionID}"
+    },
+    { "EndPoint": "/epcis/v2/queries/{queryName}/events" },
+    { "EndPoint": "/epcis/v2/nextPageToken/{token}" }
+  ]
+}

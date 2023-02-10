@@ -1,0 +1,38 @@
+{
+  "@context": 
+    [
+      "https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld",
+      {"encounter":"http://example.com/encounter"}
+    ],
+
+  "type": "EPCISDocument",
+  "schemaVersion": "2.0",
+  "creationDate":"2023-01-31T11:30:47.0Z",
+  "epcisBody": 
+    {
+      "eventList": 
+      [
+        {   
+          "type": "ObjectEvent",
+          "eventTime": "2018-02-04T23:00:00Z",
+          "eventTimeZoneOffset": "-06:00",
+          "eventID": "urn:uuid:createuuid5",
+          "epcList": [
+            "urn:epc:id:giai:880002697.200001140",
+            "urn:epc:id:giai:880002697.412440154"
+          ],
+          "action": "OBSERVE",
+          "bizStep": "ecounter-ex:bizStep-ecounter",
+
+          "readPoint": {"id": "geo:-45.63263233,-60.55647756"},
+          "bizLocation": {"id": "geo:-45.63263233,-60.55647756"},
+
+          "encounter:eventid" : "3111fce5ed2cdf97f7795367adb97fad",
+          "encounter:eventendTime" : "2018-02-10T11:20:00Z",
+          "encounter:distance-km" : "0.062",
+          "encounter:speed-knots" : "0.512",
+          "encounter:duration-hr" : "132.3333333"
+        }   
+      ]
+    }   
+}
