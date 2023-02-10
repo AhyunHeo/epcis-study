@@ -15,6 +15,3 @@ node openApi.js
 ```
 Go to browser and access localhost:8081/api-docs
 
-You will see the following: 
-
-![Alt text](./docs/swagger.png?raw=true "Title")
