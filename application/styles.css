@@ -1,0 +1,71 @@
+body {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.service {
+  display: flex;
+  justify-content: left;
+  padding-top: 20px;
+}
+
+.service > button {
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+.scan > div > * {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.captureArea {
+  display: flex;
+  flex-direction: row;
+}
+
+.captureArea > * {
+  margin-right: 10px;
+}
+
+.resultArea {
+  display: flex; 
+  flex-direction: row;
+}
+
+/* QR스캔으로 대체될 요소 */
+.input-group > input {
+  background-color: #eeeeee;
+  color: #777777;
+  width: 25%;
+  text-align: left;
+}
+
+.shipping > * {
+  display: flex; 
+  flex-direction: row; 
+  margin-left: 10px;
+}
+
+.room {
+  display: inline-block;
+  border: 2px solid black; /* Add borders to separate rooms */
+  padding: 10px; /* Add some padding to the rooms */
+  margin: 10px; /* Add margin between rooms */
+}
+.bed {
+  width: 70px;
+  height: 40px;
+  background-color: rgb(49, 209, 0);
+  border: 1px solid black;
+  margin: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+.bed.orange {
+  background-color: rgb(252, 122, 0);
+}
